@@ -22,7 +22,7 @@ CONF=/etc/goquiet/config.json
 PID_DIR=/var/run
 PID_FILE=$PID_DIR/goquiet.pid
 RET_VAL=0
-remotePort=远程端口
+remotePort=监听端口
 localAddr=目标地址
 
 [ -x $DAEMON ] || exit 0
