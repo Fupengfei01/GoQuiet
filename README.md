@@ -6,7 +6,7 @@
 
 ```
 
-wget --no-check-certificate -O gost_install.sh https://raw.githubusercontent.com/yiguihai/gost_install/master/gost_install.sh&&bash gost_install.sh
+wget --no-check-certificate -O goquiet_install.sh https://raw.githubusercontent.com/yiguihai/goquiet/master/goquiet_install.sh&&bash goquiet_install.sh
 
 ```
 
@@ -14,6 +14,6 @@ wget --no-check-certificate -O gost_install.sh https://raw.githubusercontent.com
 
 ```
 
-bash gost_install.sh uninstall  
+bash goquiet_install.sh uninstall  
 
 ```
