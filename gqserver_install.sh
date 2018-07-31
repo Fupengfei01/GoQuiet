@@ -90,8 +90,8 @@ cat > ${goquiet_config}<<-EOF
 	"FastOpen":false
 }
 EOF
-sed "s/1234/${goquietport}/g" ${goquiet_init}
-sed "s/5678/${ssaddr}:${ssport}/g" ${goquiet_init}
+sed -i "s/1234/${goquietport}/g" ${goquiet_init}
+sed -i "s/5678/${ssaddr}:${ssport}/g" ${goquiet_init}
 }
 
 check_sys(){
