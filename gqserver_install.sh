@@ -13,8 +13,8 @@ cur_dir=$( pwd )
 
 goquiet_init="/etc/init.d/goquiet"
 goquiet_config="/etc/goquiet/config.json"
-goquiet_centos="https://raw.githubusercontent.com/yiguihai/goquiet_install/master/goquiet.sh"
-goquiet_debian="https://raw.githubusercontent.com/yiguihai/goquiet_install/master/goquiet-debian.sh"
+goquiet_centos="https://raw.githubusercontent.com/yiguihai/goquiet/master/goquiet.sh"
+goquiet_debian="https://raw.githubusercontent.com/yiguihai/goquiet/master/goquiet-debian.sh"
 
 get_ip(){
     local IP=$( ip addr | egrep -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | egrep -v "^192\.168|^172\.1[6-9]\.|^172\.2[0-9]\.|^172\.3[0-2]\.|^10\.|^127\.|^255\.|^0\." | head -n 1 )
