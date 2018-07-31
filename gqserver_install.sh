@@ -90,7 +90,7 @@ cat > ${goquiet_config}<<-EOF
 	"FastOpen":false
 }
 EOF
-cat >> ${goquiet_init} <<EOF
+cat >> ${goquiet_init} <<-EOF
 remotePort=${goquietport}
 localAddr=${ssaddr}:${ssport}
 EOF
