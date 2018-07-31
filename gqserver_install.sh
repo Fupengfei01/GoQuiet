@@ -71,11 +71,7 @@ download_files() {
 }
 
 move_file() {
-    if [ -d ${cur_dir}/${1} ]; then
-        mv -f ${cur_dir}/${1} /usr/local/bin/goquiet
-      else
-        mv -f ${cur_dir}/goquiet /usr/local/bin/goquiet
-    fi
+    mv -f ${cur_dir}/${1} /usr/local/bin/goquiet
     if [ $? -ne 0 ]; then
         echo -e "[${red}错误提示${plain}] 移动文件 ${1} 失败!"
         exit 1
