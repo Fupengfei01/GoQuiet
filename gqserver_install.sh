@@ -252,7 +252,7 @@ install_goquiet(){
     move_file ${goquiet_file}
     config_goquiet
     boot_init ${goquiet_init} on
-    #install_completed_goquiet
+    install_completed_goquiet
 }
 
 uninstall_goquiet(){
