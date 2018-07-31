@@ -6,7 +6,7 @@
 
 ```
 
-wget --no-check-certificate -O goquiet_install.sh https://raw.githubusercontent.com/yiguihai/goquiet/master/goquiet_install.sh&&bash goquiet_install.sh
+wget --no-check-certificate -O goquiet_install.sh https://github.com/yiguihai/goquiet/raw/master/gqserver_install.sh&&bash goquiet_install.sh
 
 ```
 
