@@ -90,8 +90,8 @@ cat > ${goquiet_config}<<-EOF
 	"FastOpen":false
 }
 EOF
-sed "s/443/${goquietport}/g" ${goquiet_init}
-sed "s/127.0.0.1:80/${ssaddr}:${ssport}/g" ${goquiet_init}
+sed "s/监听端口/${goquietport}/g" ${goquiet_init}
+sed "s/目标地址/${ssaddr}:${ssport}/g" ${goquiet_init}
 }
 
 check_sys(){
