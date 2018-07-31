@@ -90,10 +90,8 @@ cat > ${goquiet_config}<<-EOF
 	"FastOpen":false
 }
 EOF
-cat >> ${goquiet_init} <<-EOF
-remotePort=${goquietport}
-localAddr=${ssaddr}:${ssport}
-EOF
+sed "s/443/${goquietport}/g" ${goquiet_init}
+sed "s/127.0.0.1:80/${ssaddr}:${ssport}/g" ${goquiet_init}
 }
 
 check_sys(){
